@@ -11,9 +11,8 @@
 
 <body>
   <?php
-  include 'php/navbars/navbar_default.php'
+  include '../../navbars/navbar_default.php'
   ?>
-
   <footer>
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li>

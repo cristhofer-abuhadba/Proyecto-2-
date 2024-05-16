@@ -11,9 +11,6 @@
 </head>
 
 <body>
-    <?php
-    include 'php/navbars/navbar_default.php'
-    ?>
     <div id="content_01">
         <div id="content_02">
             <h2>Registro de usuario</h2>

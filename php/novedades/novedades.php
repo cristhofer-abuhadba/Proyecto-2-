@@ -11,7 +11,7 @@
 
 <body>
   <?php
-  include 'php/navbars/navbar_default.php'
+  include '../navbars/navbar_default.php'
   ?>
 
   <footer>
