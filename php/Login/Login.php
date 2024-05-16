@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../../css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/login.js"></script>
 </head>
+
 <body>
+    <?php
+    include 'php/navbars/navbar_default.php'
+    ?>
     <div id="content_01">
         <div id="content_02">
             <h2>Inicio de sesión</h2>
@@ -51,12 +56,12 @@
                                 document.getElementById('mail').value,
                                 document.getElementById('user').value,
                                 document.getElementById('pass').value
-                            )"
-                            value="crear">
+                            )" value="crear">
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>

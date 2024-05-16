@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../../css/register.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/register.js"></script>
 </head>
+
 <body>
-<div id="content_01">
+    <?php
+    include 'php/navbars/navbar_default.php'
+    ?>
+    <div id="content_01">
         <div id="content_02">
             <h2>Registro de usuario</h2>
             <form action="">
@@ -20,7 +25,7 @@
                                 <h4>Nombre:</h4>
                             </label>
                             <input placeholder="Name" type="text" id="name" class="input_01" name="user" required>
-                        </div>  
+                        </div>
                         <div class="content_05b">
                             <label for="name">
                                 <h4>Apellido:</h4>
@@ -67,12 +72,12 @@
                                 document.getElementById('mail').value,
                                 document.getElementById('user').value,
                                 document.getElementById('pass').value
-                            )"
-                            value="crear">
+                            )" value="crear">
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>

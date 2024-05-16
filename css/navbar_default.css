@@ -1,0 +1,27 @@
+.login,
+.register {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover,
+.register:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .login {
+        position: static;
+        margin-top: 10px;   
+        margin-right: 10px; 
+    }
+    .register {
+        position: static;
+        margin-top: 10px;   
+    }
+}
