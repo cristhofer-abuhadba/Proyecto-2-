@@ -10,6 +10,12 @@ h4 {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+ul, li, a {
+    text-decoration: none;
+    position: relative;
+    color: gray;
+    list-style: none;
+}
 #content_01{
     min-height: 98vh;
     display: flex;
@@ -43,9 +49,11 @@ h4 {
 }
 #content_button {
     padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #button_00 {
-    position: relative;
     left: 80%;
     width: 75px;
     height: 34px;
@@ -53,6 +61,19 @@ h4 {
     border-radius: 5px;
     border: 1px solid rgb(0, 255, 149);
     background-color: rgb(0, 255, 149);
+}
+#button_01 {
+    position: relative;
+    right: 5%;
+    width: 75px;
+    height: 34px;
+    padding: 1px 2px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 255, 149);
+    background-color: rgb(0, 255, 149);
+}
+#none{
+    width: 185px;
 }
 .content_05a{
     width: 185px;
@@ -74,7 +95,9 @@ h4 {
     border-radius: 5px;
     border: solid 1px black;
 }
-
+.ul_00{
+    padding: 0%;
+}
 input:invalid {
     border: solid 1px red;
 }

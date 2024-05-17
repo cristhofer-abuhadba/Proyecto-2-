@@ -1,12 +1,266 @@
-function novedades(){
-    var pagina = "<?php echo basename($_SERVER['PHP_SELF']); ?>";
-    if(pagina == "home.php"){
+function home(pagina) {
+    if (pagina == "ehostiles.php") {
+        window.location.href = "../../home.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../../home.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../../home.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../../home.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../../home.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../../home.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../home.php";
+    }
+    else{
+
+    }
+}
+
+function hostiles(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "wiki/EntidadesHostiles/ehostiles.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../EntidadesHostiles/ehostiles.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../EntidadesHostiles/ehostiles.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../EntidadesHostiles/ehostiles.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../EntidadesHostiles/ehostiles.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../wiki/EntidadesHostiles/ehostiles.php";
+    }
+    else {
+    }
+}
+
+function neutrales(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "wiki/EntidadesNeutrales/eneutrales.php";
+    }
+    else if (pagina == "ehostiles.php"){
+        window.location.href = "../EntidadesNeutrales/eneutrales.php"
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../EntidadesNeutrales/eneutrales.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../EntidadesNeutrales/eneutrales.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../EntidadesNeutrales/eneutrales.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../wiki/EntidadesNeutrales/eneutrales.php";
+    }
+    else {
+    }
+}
+
+function jefes(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "wiki/Jefes/jefes.php";
+    }
+    else if (pagina == "ehostiles.php") {
+        window.location.href = "../Jefes/jefes.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../Jefes/jefes.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../Jefes/jefes.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../Jefes/jefes.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../wiki/Jefes/jefes.php";
+    }
+    else {
+    }
+}
+
+function razas(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "wiki/Razas/razas.php";
+    }
+    else if (pagina == "ehostiles.php") {
+        window.location.href = "../Razas/razas.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../Razas/razas.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../Razas/razas.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../Razas/razas.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../wiki/Razas/razas.php";
+    }
+    else {
+    }
+}
+
+function roles(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "wiki/Roles/roles.php";
+    }
+    else if (pagina == "ehostiles.php") {
+        window.location.href = "../Roles/roles.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../Roles/roles.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../Roles/roles.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../Roles/roles.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "novedades.php") {
+        window.location.href = "../wiki/Roles/roles.php";
+    }
+    else {
+    }
+}
+
+function truco(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "wiki/Terrenos/terrrenos.php";
+    }
+    else if (pagina == "ehostiles.php") {
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "roles.php"){
+        window.location.href = "../Terrenos/terrenos.php";
+    }
+    else if (pagina == "novedades.php") {
+        window.location.href = "../wiki/Terrenos/terrenos.php";
+    }
+    else {
+    }
+}
+
+function novedades(pagina) {
+    if (pagina == "home.php") {
         window.location.href = "novedades/novedades.php";
     }
-    else if(pagina == "wiki/EntidadesHostiles/hostiles.php"){
+    else if (pagina == "ehostiles.php") {
         window.location.href = "../../novedades/novedades.php";
     }
-    else(
-        window.location.href = novedades.php
-    )
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../../novedades/novedades.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../../novedades/novedades.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../../novedades/novedades.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../../novedades/novedades.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../../novedades/novedades.php";
+    }
+    else {
+    }
+}
+
+function login(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "login/logim.php";
+    }
+    else if (pagina == "ehostiles.php") {
+        window.location.href = "../../login/login.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../../login/login.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../../login/login.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../../login/login.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../../login/login.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../../login/login.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../login/login.php"
+    }
+    else {
+    }
+}
+
+function register(pagina) {
+    if (pagina == "home.php") {
+        window.location.href = "register/register.php";
+    }
+    else if (pagina == "ehostiles.php") {
+        window.location.href = "../../register/register.php";
+    }
+    else if (pagina == "eneutrales.php") {
+        window.location.href = "../../register/register.php";
+    }
+    else if (pagina == "jefes.php") {
+        window.location.href = "../../register/register.php";
+    }
+    else if (pagina == "razas.php") {
+        window.location.href = "../../register/register.php";
+    }
+    else if (pagina == "roles.php") {
+        window.location.href = "../../register/register.php";
+    }
+    else if (pagina == "terrenos.php"){
+        window.location.href = "../../register/register.php";
+    }
+    else if (pagina == "novedades.php"){
+        window.location.href = "../register/register.php"
+    }
+    else {
+    }
 }

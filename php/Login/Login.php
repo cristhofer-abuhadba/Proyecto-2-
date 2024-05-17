@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../../js/login.js"></script>
 </head>
 
 <body>
@@ -41,6 +41,12 @@
                         </div>
                     </div>
                     <div id="content_button">
+                        <ul class="ul_00">
+                            <li class="li_00">
+                                <a class="" id="" href="../home.php">Volver al inicio</a>
+                            </li>
+                        </ul>
+                        <div id="none"></div>
                         <input type="button" id="button_00" onclick="
                             verificar_campo(
                                 document.getElementById('user').value,

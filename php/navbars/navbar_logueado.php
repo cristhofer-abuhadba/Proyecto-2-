@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark" style="border: 1px solid black;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="pagina.php">Knight's DragonFire</a>
+                <a class="navbar-brand" href="#" onclick="home('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Knight's DragonFire</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,15 +27,16 @@
                                 Wiki
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="ehostiles.php">Entidades Hostiles</a></li>
-                                <li><a class="dropdown-item" href="eneutrales.php">Entidades Neutrales</a></li>
-                                <li><a class="dropdown-item" href="jefes.php">Jefes</a></li>
-                                <li><a class="dropdown-item" href="razas.php">Razas</a></li>
-                                <li><a class="dropdown-item" href="roles.php">Roles</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="hostiles('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Entidades Hostiles</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="neutrales('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Entidades Neutrales</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="jefes('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Jefes</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="razas('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Razas</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="roles('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Roles</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="truco('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Terrenos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="novedades.php">Novedades</a>
+                            <a class="nav-link" id="novedades" href="#" onclick="novedades('<?php echo basename($_SERVER['PHP_SELF']); ?>')">Novedades</a>
                         </li>
                     </ul>
                     <li class="li_01">
