@@ -1,7 +1,7 @@
 <?php
-define("HOST", "");
-define("BD", "");
-define("USER", "");
+define("HOST", "localhost");
+define("BD", "knight's dragonfire");
+define("USER", "root");
 define("PASSWORD", "");
 
 $con = mysqli_connect(HOST, USER, PASSWORD, BD);

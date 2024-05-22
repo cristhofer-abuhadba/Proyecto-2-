@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <?php
+        $contexto = 'registro';
+        require_once("../Funciones/register.php");
+    ?>
     <div id="content_01">
         <div id="content_02">
             <h2>Registro de usuario</h2>
@@ -62,18 +66,11 @@
                         </ul>
                         <div id="none"></div>
                         <input type="button" id="button_00" onclick="
-                            verificar_campo(
+                            registro(
                                 document.getElementById('name').value,
                                 document.getElementById('lastname').value,
                                 document.getElementById('user').value,
                                 document.getElementById('mail').value,
-                                document.getElementById('pass').value
-                            ),
-                            registro(
-                                document.getElementById('nombre').value,
-                                document.getElementById('apellido').value,
-                                document.getElementById('mail').value,
-                                document.getElementById('user').value,
                                 document.getElementById('pass').value
                             )" value="Crear">
                     </div>

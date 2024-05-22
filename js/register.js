@@ -28,7 +28,7 @@ function verificar_campo(name, lastname, user, mail, pass){
         error = true;
         alert("Por favor complete el campo de correo electronico.");
     }
-    else if(!mail.includes('@gmail.com') || !mail.includes('@hotmail.com') || !mail.includes('@outlook.com')){
+    else if(!mail.includes('@gmail.com') && !mail.includes('@hotmail.com') && !mail.includes('@outlook.com')){
         error = true;
         alert("Ingrese un dominio valido.");
     }
@@ -45,6 +45,40 @@ function verificar_campo(name, lastname, user, mail, pass){
         alert("No se permiten caranteres especiales.");
     }
     if(error){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
 
+function registrar(name, lastname, user, mail, pass){
+    $.ajax({
+        url: "../Funciones/register.php",
+        data: { 'comprobar': 'subir', 'nombre': name, 'apellido': lastname, 'mail': mail, 'usuario': user, 'password': pass },
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+            console.log("AJAX success", data);
+            if(data.error === "1") {
+                alert("el nombre de usuario ya esta en uso, por favor ingrese otro nombre de usuario");
+            }
+            else if(data.error === "2") {
+                alert("el correo electronico ya esta en uso, por favor ingrese otro correo electronico");
+            }
+            else if(data.error === "3") {
+                alert("Hubo una falla con la query");
+            }
+            else if(data.error === "0") {
+                alert("Se ha creado con exito su nuevo usuario de ...");
+                window.location.href = "../home.php";
+            }
+        }
+    });
+}
+
+function registro(name, lastname, user, mail, pass){
+    if(verificar_campo(name, lastname, user, mail, pass)){
+        registrar(name, lastname, user, mail, pass)
     }
 }

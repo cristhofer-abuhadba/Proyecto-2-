@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/navbar_logueado.css">
+    <link rel="stylesheet" href="../css/navbar_logueado.css">
 </head>
 
 <body>
@@ -41,13 +41,17 @@
                         </li>
                     </ul>
                     <li class="li_01">
-                        <button class="btn" onclick="window.modal.showModal();">
-                            <img src="../../img/profile-user.png" height="40px" alt="">
+                        <button class="btn" onclick="window.modal.showModal(); informacion()">
+                            <img id="img" height="40px" alt="">
                         </button>
                         <dialog id="modal">
-                            <h2>Datos del usuario</h2>
+                            <h2 id="user">Datos del usuario </h2>
+                            <p id="name">Nombre: </p>
+                            <p id="lastname">Apellido: </p>
+                            <p id="mail"> Correo electrónico: </p>
                             <p>Este es un texto de ejemplo dentro de una ventana modal</p>
                             <button onclick="window.modal.close();">Cerrar</button>
+                            <button>Cerrar cuenta</button>
                         </dialog>
                     </li>
                 </div>
