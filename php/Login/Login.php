@@ -13,7 +13,7 @@
 <body>
     <?php
         $contexto = 'Login';
-        require_once("../Funciones/register.php");
+        
     ?>
     <div id="content_01">
         <div id="content_02">
@@ -56,7 +56,7 @@
                                 document.getElementById('mail').value,
                                 document.getElementById('user').value,
                                 document.getElementById('pass').value
-                            )" value="crear">
+                            )" value="Ingresar">
                     </div>
                 </div>
             </form>

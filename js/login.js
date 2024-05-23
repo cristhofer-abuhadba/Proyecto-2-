@@ -37,7 +37,7 @@ function verificar_campo(mail, user, pass){
 }
 function ingresar(mail, user, pass){
     $.ajax({
-        url: "../Funciones/register.php",
+        url: "../Funciones/login.php",
         data: { 'comprobar': 'ingresar', 'mail': mail, 'usuario': user , 'password': pass },
         type: "POST",
         dataType: "json",
@@ -50,10 +50,16 @@ function ingresar(mail, user, pass){
                 alert("El correo electronico no esta registrado");
             }
             else if(data.error === "3") {
-                alert("La contraseña es incorrecta");
+                alert("El correo no coincide con la del usuario");
             }
             else if(data.error === "4") {
+                alert("La contraseña es incorrecta");
+            }
+            else if(data.error === "5") {
                 alert("Hubo una falla con la query");
+            }
+            else if(data.error === "6") {
+                alert("Hubo una falla con la transmision de datos del ajax al php");
             }
             else if(data.error === "0") {
                 alert("Usted se ha logrado ingresar a...");
