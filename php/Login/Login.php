@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <?php
+        $contexto = 'Login';
+        require_once("../Funciones/register.php");
+    ?>
     <div id="content_01">
         <div id="content_02">
             <h2>Inicio de sesión</h2>
@@ -48,14 +52,7 @@
                         </ul>
                         <div id="none"></div>
                         <input type="button" id="button_00" onclick="
-                            verificar_campo(
-                                document.getElementById('user').value,
-                                document.getElementById('mail').value,
-                                document.getElementById('pass').value
-                            ),
-                            registro(
-                                document.getElementById('nombre').value,
-                                document.getElementById('apellido').value,
+                            ingreso(
                                 document.getElementById('mail').value,
                                 document.getElementById('user').value,
                                 document.getElementById('pass').value

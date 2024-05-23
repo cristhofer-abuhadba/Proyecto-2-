@@ -1,4 +1,4 @@
-function verificar_campo(user, mail, pass){
+function verificar_campo(mail, user, pass){
     error = false;
     if(user.trim() === ""){
         error = true;
@@ -29,6 +29,42 @@ function verificar_campo(user, mail, pass){
         alert("No se permiten caranteres especiales.");
     }
     if(error){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+function ingresar(mail, user, pass){
+    $.ajax({
+        url: "../Funciones/register.php",
+        data: { 'comprobar': 'ingresar', 'mail': mail, 'usuario': user , 'password': pass },
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+            console.log("AJAX success", data);
+            if(data.error === "1") {
+                alert("El nombre de usuario no esta registrado");
+            }
+            else if(data.error === "2") {
+                alert("El correo electronico no esta registrado");
+            }
+            else if(data.error === "3") {
+                alert("La contraseña es incorrecta");
+            }
+            else if(data.error === "4") {
+                alert("Hubo una falla con la query");
+            }
+            else if(data.error === "0") {
+                alert("Usted se ha logrado ingresar a...");
+                window.location.href = "../home.php";
+            }
+        }
+    });
+}
 
+function ingreso(mail, user, pass){
+    if(verificar_campo(mail, user, pass)){
+        ingresar(mail, user, pass)
     }
 }
