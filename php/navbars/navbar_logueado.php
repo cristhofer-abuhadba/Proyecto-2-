@@ -50,8 +50,11 @@
                             <p id="lastname">Apellido: </p>
                             <p id="mail"> Correo electrónico: </p>
                             <p>Este es un texto de ejemplo dentro de una ventana modal</p>
-                            <button onclick="window.modal.close();">Cerrar</button>
-                            <button>Cerrar cuenta</button>
+                            <div id="content">
+                                <button id="button_01" onclick="window.modal.close();">Cerrar</button>
+                                <div id="void"></div>
+                                <button id="button_02" onclick="window.modal.close(); cerrar_cuenta()">Cerrar cuenta</button>
+                            </div>
                         </dialog>
                     </li>
                 </div>

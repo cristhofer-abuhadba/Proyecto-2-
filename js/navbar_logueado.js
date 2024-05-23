@@ -374,3 +374,32 @@ function informacion(){
         }
     })
 }
+function cerrar_cuenta(){
+    //Obetener la ruta de la URL actual
+    var path = window.location.pathname;
+    //Define la ruta base
+    var baseURL = "funciones/register.php";
+    //Define la ruta ida
+    var URL = "home.php";
+
+    if (path.includes("home")) {
+        baseURL = "funciones/register.php";
+        URL = "home.php"
+    } else if (path.includes("novedades") || path.includes("descarga")) {
+        baseURL = "../funciones/register.php";
+        URL = "../home.php"
+    } else if (path.includes("wiki")) {
+        baseURL = "../../funciones/register.php";
+        URL = "../../home.php"
+    }
+    $.ajax({
+        url: baseURL,
+        data:{ 'comprobar': 'cerrar'},
+        type: "POST",
+        dataType: "html",
+        success: function(data){
+            console.log("se cerro la cuenta");
+            window.location.href = URL;
+        }
+    })
+}

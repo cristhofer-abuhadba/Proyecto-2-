@@ -56,6 +56,12 @@ if(isset($_POST['comprobar']) && $_POST['comprobar'] != null){
             ob_end_clean();
             echo json_encode($registro);
             break; 
+
+        case 'cerrar':
+            if($_SESSION == true){
+                session_destroy();
+            }
+            break;
         }
     }
 else{
