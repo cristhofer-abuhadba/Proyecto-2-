@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     font-family: 'Lato', sans-serif;
     color: #333;
     background-color: #F1F6F9;
+    align-items: center;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    height: 1000px;
 /* arreglar linea blanca y escala de la imagen
     background-image: url('../KnightsDragonfire/img/fondo.jpeg');
     background-size: cover;

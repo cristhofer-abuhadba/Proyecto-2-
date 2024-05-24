@@ -16,6 +16,9 @@
   require_once("../../Funciones/register.php");
   include '../../Funciones/navbar.php'
   ?>
+  <main>
+
+  </main>
   <footer>
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li>
